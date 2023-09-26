@@ -24,6 +24,7 @@ export default function InsertionSort() {
     }
 
     setAnimations(animationsArray);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const getAnimationAttributes = (i, j) => {
@@ -107,7 +108,7 @@ export default function InsertionSort() {
                 key={i}
                 style={{
                   height: `${val * 3}px`,
-                  ['--endpositon']: swapDetails[i] ? swapDetails[i] : '0px',
+                  '--endpositon': swapDetails[i] ? swapDetails[i] : '0px',
                 }}>
                 {val}
               </div>)
