@@ -1,0 +1,47 @@
+:root {
+    --animationSpeed: 0.5s;
+}
+
+.visualization-container {
+    background-color: black;
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    padding: 12px;
+}
+
+.bar {
+    border: 1px solid gold;
+    text-align: center;
+    background-color: white;
+    width: 50px;
+}
+
+.btn {
+    background-color: blue;
+    padding: 12px;
+    margin: 12px;
+    width: 50px;
+}
+
+.active {
+    background-color: red;
+}
+
+.complete {
+    background-color: greenyellow;
+}
+
+.animate {
+    animation: doswaps var(--animationSpeed) ease-in forwards;
+}
+
+@keyframes doswaps {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(var(--endpositon));
+    }
+}
